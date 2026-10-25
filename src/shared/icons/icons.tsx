@@ -49,6 +49,16 @@ export const YoutubeIcon = (p: IconProps) => (
   </Svg>
 );
 
+export const WhatsappIcon = (p: IconProps) => (
+  <Svg {...p}>
+    <path d="M3.5 20.5 4.8 16.4A8.5 8.5 0 1 1 8 19.6l-4.5.9Z" {...stroke} />
+    <path
+      fill="currentColor"
+      d="M9.3 7.6c.3-.3.8-.3 1 .1l.8 1.8c.1.3 0 .6-.2.8l-.6.6c.6 1.2 1.6 2.2 2.8 2.8l.6-.6c.2-.2.5-.3.8-.2l1.8.8c.4.2.4.7.1 1l-.9.9c-.5.5-1.3.6-2 .3-2.3-1-4.1-2.8-5.1-5.1-.3-.7-.2-1.5.3-2l.6-.6Z"
+    />
+  </Svg>
+);
+
 export const MailIcon = (p: IconProps) => (
   <Svg {...p}>
     <rect x="3" y="5" width="18" height="14" rx="2" {...stroke} />

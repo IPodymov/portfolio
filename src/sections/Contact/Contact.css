@@ -196,3 +196,75 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Messenger: Telegram / WhatsApp switch attached to one input */
+
+.messenger-field {
+  display: flex;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.messenger-switch {
+  display: flex;
+  flex: none;
+}
+
+.messenger-switch label {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-right: 0;
+  color: var(--muted);
+  font-size: 18px;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.messenger-switch label:first-child {
+  border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+}
+
+.messenger-switch label:hover {
+  color: var(--text);
+}
+
+.messenger-switch label.active {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.messenger-switch label:has(:focus-visible) {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+.messenger-input {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-form .messenger-input input {
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.contact-form-note {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.contact-form-note a {
+  color: var(--text-soft);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.contact-form-note a:hover {
+  color: var(--accent);
+}

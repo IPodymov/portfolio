@@ -44,3 +44,9 @@ export type Project = {
 export type Stat = { value: string; label: string; icon: IconName };
 
 export type Principle = { title: string; text: string };
+
+export type ContactFormConfig = {
+  /** Where letters from the form are addressed. */
+  recipient: string;
+  subject: string;
+};

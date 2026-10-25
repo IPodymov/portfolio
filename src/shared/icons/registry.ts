@@ -21,6 +21,7 @@ import {
   ServerIcon,
   TelegramIcon,
   UserIcon,
+  WhatsappIcon,
   YoutubeIcon,
 } from "./icons";
 
@@ -51,6 +52,7 @@ export const iconRegistry = {
   server: ServerIcon,
   telegram: TelegramIcon,
   user: UserIcon,
+  whatsapp: WhatsappIcon,
   youtube: YoutubeIcon,
 };
 
