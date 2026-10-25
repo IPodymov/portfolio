@@ -1,0 +1,57 @@
+import {
+  ArrowRightIcon,
+  BotIcon,
+  BriefcaseIcon,
+  ChevronIcon,
+  CloseIcon,
+  CloudIcon,
+  CodeIcon,
+  ExternalIcon,
+  GithubIcon,
+  GlobeIcon,
+  LayersIcon,
+  LayoutIcon,
+  MailIcon,
+  MenuIcon,
+  PinIcon,
+  QuoteIcon,
+  RepoIcon,
+  RocketIcon,
+  SendIcon,
+  ServerIcon,
+  TelegramIcon,
+  UserIcon,
+  YoutubeIcon,
+} from "./icons";
+
+/**
+ * Name → component map. Content files refer to icons by name,
+ * so adding an icon means: draw it in icons.tsx and register it here.
+ */
+export const iconRegistry = {
+  arrowRight: ArrowRightIcon,
+  bot: BotIcon,
+  briefcase: BriefcaseIcon,
+  chevron: ChevronIcon,
+  close: CloseIcon,
+  cloud: CloudIcon,
+  code: CodeIcon,
+  external: ExternalIcon,
+  github: GithubIcon,
+  globe: GlobeIcon,
+  layers: LayersIcon,
+  layout: LayoutIcon,
+  mail: MailIcon,
+  menu: MenuIcon,
+  pin: PinIcon,
+  quote: QuoteIcon,
+  repo: RepoIcon,
+  rocket: RocketIcon,
+  send: SendIcon,
+  server: ServerIcon,
+  telegram: TelegramIcon,
+  user: UserIcon,
+  youtube: YoutubeIcon,
+};
+
+export type IconName = keyof typeof iconRegistry;

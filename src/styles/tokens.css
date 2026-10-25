@@ -1,0 +1,39 @@
+/*
+ * Design tokens. Every colour, font and radius used in components comes from here.
+ *
+ * Breakpoints (CSS variables can't be used in media queries, keep them in sync):
+ *   --bp-lg: 1100px  — header CTA hidden, contact stacks
+ *   --bp-md:  960px  — burger menu, single-column hero
+ *   --bp-sm:  640px  — phone layout
+ */
+:root {
+  --bg: #0e0e10;
+  --bg-2: #141417;
+  --surface: #1a1a1e;
+  --border: #2a2a30;
+  --text: #f4f4f5;
+  --text-soft: #d4d4d8;
+  --muted: #a1a1aa;
+  --accent: #ff5a1f;
+  --accent-2: #ff7a3d;
+  --accent-soft: rgb(255 90 31 / 0.12);
+
+  --font-display: "Oswald", "Arial Narrow", sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-script: "Caveat", cursive;
+
+  --radius: 8px;
+  --radius-sm: 4px;
+  --header-height: 68px;
+  --container: 1200px;
+  --gutter: 24px;
+
+  color-scheme: dark;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --gutter: 16px;
+  }
+}

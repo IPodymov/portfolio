@@ -1,0 +1,19 @@
+.icon-badge {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  color: var(--accent);
+  font-size: 22px;
+}
+
+.icon-badge-round {
+  border-radius: 50%;
+  background: var(--accent-soft);
+}
+
+.icon-badge-square {
+  border-radius: 6px;
+  border: 1px solid var(--accent);
+}

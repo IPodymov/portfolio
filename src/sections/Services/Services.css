@@ -1,0 +1,45 @@
+.services {
+  background:
+    radial-gradient(ellipse at 90% 0%, rgb(255 90 31 / 0.1), transparent 50%),
+    var(--bg);
+}
+
+.services-heading {
+  margin-bottom: 36px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.services-grid > * {
+  min-width: 0;
+}
+
+.service-card {
+  padding: 26px 22px;
+}
+
+.service-card h3 {
+  margin: 20px 0 10px;
+  font-size: 16px;
+}
+
+.service-card p {
+  color: var(--muted);
+  font-size: 13.5px;
+}
+
+@media (max-width: 960px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,16 @@
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.card-interactive {
+  transition:
+    border-color 0.25s,
+    transform 0.25s;
+}
+
+.card-interactive:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+}
