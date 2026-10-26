@@ -41,21 +41,23 @@ export function Hero() {
         <div className="hero-visual">
           <div className="hero-slash" aria-hidden="true" />
           <div className="hero-dots" aria-hidden="true" />
-          <img
-            className="hero-photo"
-            src={profile.avatar}
-            alt={profile.fullName}
-            width={420}
-            height={420}
-          />
-          <div className="hero-badge">
-            <strong>{hero.badge.value}</strong>
-            <span>
-              {hero.badge.label[0]}
-              <br />
-              {hero.badge.label[1]}
-            </span>
-            <Icon name="code" />
+          <div className="hero-portrait">
+            <img
+              className="hero-photo"
+              src={profile.avatar}
+              alt={profile.fullName}
+              width={420}
+              height={420}
+            />
+            <div className="hero-badge">
+              <strong>{hero.badge.value}</strong>
+              <span>
+                {hero.badge.label[0]}
+                <br />
+                {hero.badge.label[1]}
+              </span>
+              <Icon name="code" />
+            </div>
           </div>
         </div>
       </div>
